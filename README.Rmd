@@ -2,8 +2,8 @@
 output:
   md_document:
     variant: markdown_github
-bibliography: notebook/references.bib
-csl: notebook/elsevier-with-titles.csl
+bibliography: vignettes/references.bib
+csl: vignettes/elsevier-with-titles.csl
 link-citations: true
 ---
 
@@ -33,11 +33,11 @@ for work related to Avian Influenza
 
 This repository is setup as an R package that implements the core model,
 which is based on Hosseini et al.'s 2013 metapopulation model 
-`r citep("10.1371/journal.pone.0080091")`.  The `notebook/` directory 
+`r citep("10.1371/journal.pone.0080091")`.  The `vignettes/` directory 
 contains interim notes and analyses.
 
 ```{r bibtex, echo = FALSE, message = FALSE, cache=FALSE, results = 'asis'}
-write.bibtex(file="notebook/references.bib")
+write.bibtex(file="vignettes/references.bib")
 ```
 
 ## References
