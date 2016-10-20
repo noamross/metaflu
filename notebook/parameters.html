@@ -133,21 +133,23 @@ $(document).ready(function () {
 <div id="new-model-paramaters" class="section level3">
 <h3>New Model Paramaters</h3>
 <p><strong>Poultry to Poultry Direct Transmission <span class="math inline">\(\beta_{PP}\)</span></strong> Originally adapted from duck study <span class="citation">[<a href="#ref-Sturm_Ramirez_2004">2</a>]</span> ~ but unclear how exactly. Existing studies / models deal with village- or flock-level transmission, not individuals. For example, in West Bengal<span class="citation">[<a href="#ref-Pandit_2013">3</a>]</span>: <span class="math inline">\(1.00 * 10^{-8}\)</span>, originally taken from a study in wild birds <span class="citation">[<a href="#ref-Vaidya_2012">4</a>]</span>.</p>
+<p>Study of Direct transmission of</p>
 <p><strong>Wild Bird to Poultry Direct Transmission <span class="math inline">\(\beta_{WP}\)</span></strong><br />
-Transmission between wild birds and poultry <em>communities</em> (<span class="math inline">\(1.00 * 10^{-8}\)</span>) was based on previous study of avian influenza dynamics in <em>wild birds</em> <span class="citation">[<a href="#ref-Vaidya_2012">4</a>]</span></p>
+Transmission between wild birds and poultry <em>communities</em> (<span class="math inline">\(1.00 * 10^{-8}\)</span>) was based on previous study of avian influenza dynamics in <em>wild birds</em> <span class="citation">[<a href="#ref-Vaidya_2012">4</a>]</span>.</p>
+<p>Transmission of <strong>H5N3 LPAI</strong> from ducks to chickens measured via experimental, close quarters interaction resulted in an indivdidual duck <span class="math inline">\(\beta_{WP}\)</span> of 0.3 infections/day. The authors of this study also investigated transmission via drinking water contaminated with duck feces (using a small, realistic amount of fecal contamination), showing that it lead to seroconversion in 50% of chickens exposed to it and vRNA in all chickens. Seroconversion via fomites on surfaces was not observed, although some vRNA was detected in oropharynges and cloacae <span class="citation">[<a href="#ref-CLAES_2013">5</a>]</span>.</p>
 <p><strong>Poultry to Human Direct Transmission <span class="math inline">\(\beta_{PH}\)</span></strong><br />
-Fitted parameters from models predicting the seasonality of cumulative cases of HPAI H5N1 <span class="citation">[<a href="#ref-TUNCER_2013">5</a>]</span>, the estimated range for direct poultry to human transmission was <span class="math inline">\(1.9 * 10^{-11}\)</span> to <span class="math inline">\(2.3 * 10^{-11}\)</span>.</p>
+Fitted parameters from models predicting the seasonality of cumulative cases of HPAI H5N1 <span class="citation">[<a href="#ref-TUNCER_2013">6</a>]</span>, the estimated range for direct poultry to human transmission was <span class="math inline">\(1.9 * 10^{-11}\)</span> to <span class="math inline">\(2.3 * 10^{-11}\)</span>.</p>
 <p><strong>Recovery Rate <span class="math inline">\(\upsilon\)</span></strong><br />
-Recovery for HPAI infected poultry does not seem to be commonly modeled – instead either SI models <span class="citation">[<a href="#ref-TUNCER_2013">5</a>,<a href="#ref-WARD_2008">6</a>]</span> or SIC (Culled) <span class="citation">[<a href="#ref-Pandit_2013">3</a>]</span> are used.</p>
+Recovery for HPAI infected poultry does not seem to be commonly modeled – instead either SI models <span class="citation">[<a href="#ref-TUNCER_2013">6</a>,<a href="#ref-WARD_2008">7</a>]</span> or SIC (Culled) <span class="citation">[<a href="#ref-Pandit_2013">3</a>]</span> are used.</p>
 <p><strong>Disease Mortality Rate <span class="math inline">\(\alpha\)</span></strong><br />
-Originally given as a range from studies based on ducks / chickens. When re-calculated based on chicken-specific parameter paper<span class="citation">[<a href="#ref-Bouma_2009">7</a>]</span>, <span class="math inline">\(\alpha = 0.39\)</span>.</p>
+Originally given as a range from studies based on ducks / chickens. When re-calculated based on chicken-specific parameter paper<span class="citation">[<a href="#ref-Bouma_2009">8</a>]</span>, <span class="math inline">\(\alpha = 0.39\)</span>.</p>
 <p><strong>Environmental Uptake Rate <span class="math inline">\(\nu\)</span></strong><br />
 <strong>Virion Infectiousness <span class="math inline">\(\phi\)</span></strong><br />
 <strong>Virus Degradation Rate <span class="math inline">\(\eta\)</span></strong><br />
 <strong>Virion Shedding Rate <span class="math inline">\(\sigma\)</span></strong></p>
-<p>Environmental transmission not deemed relevant for initial model ~ more relevant for fecal-oral LPAI transmission when no epidemic occurs. In a long-term model could be interesting to consider effects of cleaning. HPAI environmental persistence has been researched under laboratory conditions <span class="citation">[<a href="#ref-Wood_2010">8</a>]</span>.</p>
+<p>Environmental transmission not deemed relevant for initial model ~ more relevant for fecal-oral LPAI transmission when no epidemic occurs. In a long-term model could be interesting to consider effects of cleaning. HPAI environmental persistence has been researched under laboratory conditions <span class="citation">[<a href="#ref-Wood_2010">9</a>]</span>.</p>
 <p><strong>Movement Rate <span class="math inline">\(\omega\)</span></strong></p>
-<p>Original paper uses values from FAO Poultry Review in Egypt <span class="citation">[<a href="#ref-Unknown_2016">9</a>]</span>, although exact decision on how to quantify <span class="math inline">\(\omega\)</span> not immediately clear. Once the method is understood, this resource may provide more specific information for Ethiopia: <span class="citation">[<a href="#ref-greycite54620">10</a>]</span>. Alternatively, FAO data may be relevant here.</p>
+<p>Original paper uses values from FAO Poultry Review in Egypt <span class="citation">[<a href="#ref-Unknown_2016">10</a>]</span>, although exact decision on how to quantify <span class="math inline">\(\omega\)</span> not immediately clear. Once the method is understood, this resource may provide more specific information for Ethiopia: <span class="citation">[<a href="#ref-greycite54620">11</a>]</span>. Alternatively, FAO data may be relevant here.</p>
 </div>
 <div id="references" class="section level2">
 <h2>References</h2>
@@ -164,23 +166,26 @@ Originally given as a range from studies based on ducks / chickens. When re-calc
 <div id="ref-Vaidya_2012">
 <p>[4] N.K. Vaidya, F.-B. Wang, X. Zou, Avian Influenza Dynamics in Wild Birds with Bird Mobility and Spatial Heterogeneous Environment. Discrete and Continuous Dynamical Systems - Series B. 17 (2012) 2829–2848. doi:<a href="https://doi.org/10.3934/dcdsb.2012.17.2829">10.3934/dcdsb.2012.17.2829</a>.</p>
 </div>
+<div id="ref-CLAES_2013">
+<p>[5] G. CLAES, S. MARCH\a’E, J. DEWULF, T.V.D. BERG, B. LAMBRECHT, An Experimental Model to Analyse the Risk of Introduction of a Duck-Originated H5 Low-Pathogenic Avian Influenza Virus in Poultry Through Close Contact and Contaminative Transmission. Epidemiology and Infection. 142 (2013) 1836–1847. doi:<a href="https://doi.org/10.1017/s0950268813002793">10.1017/s0950268813002793</a>.</p>
+</div>
 <div id="ref-TUNCER_2013">
-<p>[5] N. TUNCER, M. MARTCHEVA, MODELING SEASONALITY IN AVIAN INFLUENZA H5N1. Journal of Biological Systems. 21 (2013) 1340004. doi:<a href="https://doi.org/10.1142/s0218339013400044">10.1142/s0218339013400044</a>.</p>
+<p>[6] N. TUNCER, M. MARTCHEVA, MODELING SEASONALITY IN AVIAN INFLUENZA H5N1. Journal of Biological Systems. 21 (2013) 1340004. doi:<a href="https://doi.org/10.1142/s0218339013400044">10.1142/s0218339013400044</a>.</p>
 </div>
 <div id="ref-WARD_2008">
-<p>[6] M.P. WARD, D. MAFTEI, C. APOSTU, A. SURU, Estimation of the Basic Reproductive Number ( R0) for Epidemic, Highly Pathogenic Avian Influenza Subtype H5N1 Spread. Epidemiology and Infection. 137 (2008) 219. doi:<a href="https://doi.org/10.1017/s0950268808000885">10.1017/s0950268808000885</a>.</p>
+<p>[7] M.P. WARD, D. MAFTEI, C. APOSTU, A. SURU, Estimation of the Basic Reproductive Number ( R0) for Epidemic, Highly Pathogenic Avian Influenza Subtype H5N1 Spread. Epidemiology and Infection. 137 (2008) 219. doi:<a href="https://doi.org/10.1017/s0950268808000885">10.1017/s0950268808000885</a>.</p>
 </div>
 <div id="ref-Bouma_2009">
-<p>[7] A. Bouma, I. Claassen, K. Natih, D. Klinkenberg, C.A. Donnelly, G. Koch, et al., Estimation of Transmission Parameters of H5N1 Avian Influenza Virus in Chickens. PLoS Pathog. 5 (2009) e1000281. doi:<a href="https://doi.org/10.1371/journal.ppat.1000281">10.1371/journal.ppat.1000281</a>.</p>
+<p>[8] A. Bouma, I. Claassen, K. Natih, D. Klinkenberg, C.A. Donnelly, G. Koch, et al., Estimation of Transmission Parameters of H5N1 Avian Influenza Virus in Chickens. PLoS Pathog. 5 (2009) e1000281. doi:<a href="https://doi.org/10.1371/journal.ppat.1000281">10.1371/journal.ppat.1000281</a>.</p>
 </div>
 <div id="ref-Wood_2010">
-<p>[8] J.P. Wood, Y.W. Choi, D.J. Chappie, J.V. Rogers, J.Z. Kaye, Environmental Persistence of a Highly Pathogenic Avian Influenza (H5N1) Virus. Environmental Science &amp; Technology. 44 (2010) 7515–7520. doi:<a href="https://doi.org/10.1021/es1016153">10.1021/es1016153</a>.</p>
+<p>[9] J.P. Wood, Y.W. Choi, D.J. Chappie, J.V. Rogers, J.Z. Kaye, Environmental Persistence of a Highly Pathogenic Avian Influenza (H5N1) Virus. Environmental Science &amp; Technology. 44 (2010) 7515–7520. doi:<a href="https://doi.org/10.1021/es1016153">10.1021/es1016153</a>.</p>
 </div>
 <div id="ref-Unknown_2016">
-<p>[9] Unknown, Unknown. (2016). <a href="ftp://ftp.fao.org/docrep/fao/011/ai355e/ai355e00.pdf" class="uri">ftp://ftp.fao.org/docrep/fao/011/ai355e/ai355e00.pdf</a>.</p>
+<p>[10] Unknown, Unknown. (2016). <a href="ftp://ftp.fao.org/docrep/fao/011/ai355e/ai355e00.pdf" class="uri">ftp://ftp.fao.org/docrep/fao/011/ai355e/ai355e00.pdf</a>.</p>
 </div>
 <div id="ref-greycite54620">
-<p>[10] ANKERS, Microsoft Word - Biosecurity in Small Scale Poultry Production-Ethiopia-2008.doc. (2010). <a href="http://www.fao.org/docrep/013/al837e/al837e00.pdf" class="uri">http://www.fao.org/docrep/013/al837e/al837e00.pdf</a>.</p>
+<p>[11] ANKERS, Microsoft Word - Biosecurity in Small Scale Poultry Production-Ethiopia-2008.doc. (2010). <a href="http://www.fao.org/docrep/013/al837e/al837e00.pdf" class="uri">http://www.fao.org/docrep/013/al837e/al837e00.pdf</a>.</p>
 </div>
 </div>
 </div>

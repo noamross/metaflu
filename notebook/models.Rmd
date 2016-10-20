@@ -101,7 +101,29 @@ This analysis creates disease maps using multicriteria decision modelling (MCDM)
 
 - Includes MCDM maps of Nigeria, Ethiopia and Kenya
 
- 
+###The potential spread of highly pathogenic avian influenza virus via dynamic contacts between poultry premises in Great Britain `r citep('10.1186/1746-6148-7-59')`
+
+The authors of this paper construct a model to investigate whether a large outbreak of HPAI is possible in the poultry industry of Great Britain, and what type of parameters might lead to such an outbreak.
+
+- Network model with nodes (n = 10,692) representing poultry premises housing more than 50 birds, and edges that represent connections between farms from owners, catching teams, or slaughterhouse teams traveling. 
+
+- Movement parameters regarding personnel based on expert opinion. 
+
+- Stochastic simulation model with Susceptible, Infected, Detected, and Culled compartments and a time step of one day.  
+
+- RNG chooses premises to infect and a random date of infection (one of 886 days covered by cathing company data set) to seed the outbreak.
+
+- If seed farm was not visited within 15 days of seeding, transmission limited to 'local spread'. 
+
+- It is assumed that HPAI spread through air is limited to only 500m range, besides this 'local spread' there is no way for virus to be transmitted except through owners, catching teams, or slaughterhouse teams. 
+
+- It is unclear how authors integrated some catching team species-specific catching probabilities into model. 
+
+- Parameter for personnel transmission (for each of the three types of personnel) is changed in a stepwise fasion from 0 to 0.2 in 0.01 steps as well as 0.001, giving rise to 10,648 scenarios The authors state that 100 simulations were run for each scenario. 
+
+- Protection zones and surveillance zones set up once a case is identified in model, cutting off personnel movement/transmission. 
+
+- Logistic regression was performed to determine odds ratios for transmission rates that created secondary spread epidemics (outside of one premise) as well as parameters which led to larger (> 65 premises) versus smaller (< 25 premises) outbreaks. 
 
 #Summary - In Progress
 Most compartmental models operate on the village- or flock-level; I have been unable to find poultry - poultry compartmental modeling. The predominant form of analysis in this area of research seems to be spatial at this time. 

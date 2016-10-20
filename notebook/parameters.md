@@ -25,8 +25,12 @@ Movement Rate $\omega = 0.30$
 __Poultry to Poultry Direct Transmission $\beta_{PP}$__
 Originally adapted from duck study [@Sturm_Ramirez_2004] ~ but unclear how exactly. Existing studies / models deal with village- or flock-level transmission, not individuals. For example, in West Bengal[@Pandit_2013]: $1.00 * 10^{-8}$, originally taken from a study in wild birds [@Vaidya_2012]. 
 
+Study of Direct transmission of 
+
 __Wild Bird to Poultry Direct Transmission $\beta_{WP}$__  
-Transmission between wild birds and poultry *communities* ($1.00 * 10^{-8}$) was based on previous study of avian influenza dynamics in *wild birds* [@Vaidya_2012]
+Transmission between wild birds and poultry *communities* ($1.00 * 10^{-8}$) was based on previous study of avian influenza dynamics in *wild birds* [@Vaidya_2012].
+
+Transmission of __H5N3 LPAI__ from ducks to chickens measured via experimental, close quarters interaction resulted in an indivdidual duck $\beta_{WP}$ of 0.3 infections/day. The authors of this study also investigated transmission via drinking water contaminated with duck feces (using a small, realistic amount of fecal contamination), showing that it lead to seroconversion in 50% of chickens exposed to it and vRNA in all chickens. Seroconversion via fomites on surfaces was not observed, although some vRNA was detected in oropharynges and cloacae [@CLAES_2013].
 
 __Poultry to Human Direct Transmission $\beta_{PH}$__  
 Fitted parameters from models predicting the seasonality of cumulative cases of HPAI H5N1 [@TUNCER_2013], the estimated range for direct poultry to human transmission was $1.9 * 10^{-11}$ to $2.3 * 10^{-11}$.

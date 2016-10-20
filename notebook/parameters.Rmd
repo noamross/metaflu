@@ -32,13 +32,17 @@ Virion Shedding Rate $\sigma = 10^5$
 
 Movement Rate $\omega = 0.30$
 
-###New Model Paramaters
+###New Model Parameters
 
 __Poultry to Poultry Direct Transmission $\beta_{PP}$__
-Originally adapted from duck study `r citep('10.1128/JVI.78.9.4892-4901.2004')` ~ but unclear how exactly. Existing studies / models deal with village- or flock-level transmission, not individuals. For example, in West Bengal`r citep('10.1038/srep02175')`: $1.00 * 10^{-8}$, originally taken from a study in wild birds `r citep('10.3934/dcdsb.2012.17.2829')`. 
+Originally adapted from duck study `r citep('10.1128/JVI.78.9.4892-4901.2004')` ~ but unclear how exactly. Existing models deal with village- or flock-level transmission, not individuals. For example, in West Bengal`r citep('10.1038/srep02175')`: $1.00 * 10^{-8}$, originally taken from a study in wild birds `r citep('10.3934/dcdsb.2012.17.2829')`. 
+
+In an experimental study of close-quarter chicken-to-chicken transmission of __H5N1 HPAI__, $\beta_{PP} was estimated between 0.74 to 0.8, depending on the inoculated dose `r citep('10.1371/journal.ppat.1000281')`. 
 
 __Wild Bird to Poultry Direct Transmission $\beta_{WP}$__  
-Transmission between wild birds and poultry *communities* ($1.00 * 10^{-8}$) was based on previous study of avian influenza dynamics in *wild birds* `r citep('10.3934/dcdsb.2012.17.2829')`
+Transmission between wild birds and poultry *communities* ($1.00 * 10^{-8}$) was based on previous study of avian influenza dynamics in *wild birds* `r citep('10.3934/dcdsb.2012.17.2829')`.
+
+Transmission of __H5N3 LPAI__ from ducks to chickens measured via experimental, close quarters interaction resulted in an indivdidual duck $\beta_{WP}$ of 0.3 infections/day. The authors of this study also investigated transmission via drinking water contaminated with duck feces (using a small, realistic amount of fecal contamination), showing that it lead to seroconversion in 50% of chickens exposed to it and vRNA in all chickens. Seroconversion via fomites on surfaces was not observed, although some vRNA was detected in oropharynges and cloacae `r citep('10.1017/S0950268813002793')`.
 
 __Poultry to Human Direct Transmission $\beta_{PH}$__  
 Fitted parameters from models predicting the seasonality of cumulative cases of HPAI H5N1 `r citep('10.1142/S0218339013400044')`, the estimated range for direct poultry to human transmission was $1.9 * 10^{-11}$ to $2.3 * 10^{-11}$.
@@ -47,7 +51,7 @@ __Recovery Rate $\upsilon$__
 Recovery for HPAI infected poultry does not seem to be commonly modeled -- instead either SI models `r citep(list('10.1017/S0950268808000885', '10.1142/S0218339013400044'))` or SIC (Culled) `r citep('10.1038/srep02175')` are used.  
 
 __Disease Mortality Rate $\alpha$__  
-Originally given as a range from studies based on ducks / chickens. When re-calculated based on chicken-specific parameter paper`r citep('10.1371/journal.ppat.1000281')`, $\alpha = 0.39$.
+Originally given as a range from studies based on ducks / chickens. When re-calculated based on chicken-specific parameter paper `r citep('10.1371/journal.ppat.1000281')`, $\alpha = 0.39$.
 
 __Environmental Uptake Rate $\nu$__  
 __Virion Infectiousness $\phi$__  

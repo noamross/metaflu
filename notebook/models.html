@@ -196,6 +196,22 @@ $(document).ready(function () {
 <li><p>Includes MCDM maps of Nigeria, Ethiopia and Kenya</p></li>
 </ul>
 </div>
+<div id="the-potential-spread-of-highly-pathogenic-avian-influenza-virus-via-dynamic-contacts-between-poultry-premises-in-great-britain-dent_2011" class="section level3">
+<h3>The potential spread of highly pathogenic avian influenza virus via dynamic contacts between poultry premises in Great Britain <span class="citation">[<a href="#ref-Dent_2011">7</a>]</span></h3>
+<p>The authors of this paper construct a model to investigate whether a large outbreak of HPAI is possible in the poultry industry of Great Britain, and what type of parameters might lead to such an outbreak.</p>
+<ul>
+<li><p>Network model with nodes (n = 10,692) representing poultry premises housing more than 50 birds, and edges that represent connections between farms from owners, catching teams, or slaughterhouse teams traveling.</p></li>
+<li><p>Movement parameters regarding personnel based on expert opinion.</p></li>
+<li><p>Stochastic simulation model with Susceptible, Infected, Detected, and Culled compartments and a time step of one day.</p></li>
+<li><p>RNG chooses premises to infect and a random date of infection (one of 886 days covered by cathing company data set) to seed the outbreak.</p></li>
+<li><p>If seed farm was not visited within 15 days of seeding, transmission limited to ‘local spread’.</p></li>
+<li><p>It is assumed that HPAI spread through air is limited to only 500m range, besides this ‘local spread’ there is no way for virus to be transmitted except through owners, catching teams, or slaughterhouse teams.</p></li>
+<li><p>It is unclear how authors integrated some catching team species-specific catching probabilities into model.</p></li>
+<li><p>Parameter for personnel transmission (for each of the three types of personnel) is changed in a stepwise fasion from 0 to 0.2 in 0.01 steps as well as 0.001, giving rise to 10,648 scenarios The authors state that 100 simulations were run for each scenario.</p></li>
+<li><p>Protection zones and surveillance zones set up once a case is identified in model, cutting off personnel movement/transmission.</p></li>
+<li><p>Logistic regression was performed to determine odds ratios for transmission rates that created secondary spread epidemics (outside of one premise) as well as parameters which led to larger (&gt; 65 premises) versus smaller (&lt; 25 premises) outbreaks.</p></li>
+</ul>
+</div>
 <div id="summary---in-progress" class="section level1">
 <h1>Summary - In Progress</h1>
 <p>Most compartmental models operate on the village- or flock-level; I have been unable to find poultry - poultry compartmental modeling. The predominant form of analysis in this area of research seems to be spatial at this time.</p>
@@ -219,6 +235,9 @@ $(document).ready(function () {
 </div>
 <div id="ref-greycite54493">
 <p>[6] rmetras, (2016). <a href="https://www.researchgate.net/profile/Solenne_Costard/publication/244638255_Mapping_the_Likelihood_of_Introduction_and_Spread_of_Highly_Pathogenic_Avian_Influenza_Virus_H5N1_in_Africa_Ghana_Ethiopia_Kenya_and_Nigeria_using_Multicriteria_Decision_Modelling/links/0c9605265735ca6791000000.pdf" class="uri">https://www.researchgate.net/profile/Solenne_Costard/publication/244638255_Mapping_the_Likelihood_of_Introduction_and_Spread_of_Highly_Pathogenic_Avian_Influenza_Virus_H5N1_in_Africa_Ghana_Ethiopia_Kenya_and_Nigeria_using_Multicriteria_Decision_Modelling/links/0c9605265735ca6791000000.pdf</a>.</p>
+</div>
+<div id="ref-Dent_2011">
+<p>[7] J.E. Dent, I.Z. Kiss, R.R. Kao, M. Arnold, The Potential Spread of Highly Pathogenic Avian Influenza Virus via Dynamic Contacts Between Poultry Premises in Great Britain. BMC Vet Res. 7 (2011) 59. doi:<a href="https://doi.org/10.1186/1746-6148-7-59">10.1186/1746-6148-7-59</a>.</p>
 </div>
 </div>
 </div>
