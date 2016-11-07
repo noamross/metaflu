@@ -37,7 +37,7 @@ Movement Rate $\omega = 0.30$
 __Poultry to Poultry Direct Transmission $\beta_{PP}$__
 Originally adapted from duck study `r citep('10.1128/JVI.78.9.4892-4901.2004')` ~ but unclear how exactly. Existing models deal with village- or flock-level transmission, not individuals. For example, in West Bengal`r citep('10.1038/srep02175')`: $1.00 * 10^{-8}$, originally taken from a study in wild birds `r citep('10.3934/dcdsb.2012.17.2829')`. 
 
-In an experimental study of close-quarter chicken-to-chicken transmission of __H5N1 HPAI__, $\beta_{PP} was estimated between 0.74 to 0.8, depending on the inoculated dose `r citep('10.1371/journal.ppat.1000281')`. 
+In an experimental study of close-quarter chicken-to-chicken transmission of __H5N1 HPAI__, $\beta_{PP}$ was estimated between 0.74 to 0.8, depending on the inoculated dose `r citep('10.1371/journal.ppat.1000281')`. 
 
 __Wild Bird to Poultry Direct Transmission $\beta_{WP}$__  
 Transmission between wild birds and poultry *communities* ($1.00 * 10^{-8}$) was based on previous study of avian influenza dynamics in *wild birds* `r citep('10.3934/dcdsb.2012.17.2829')`.
